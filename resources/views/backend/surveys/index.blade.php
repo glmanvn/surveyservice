@@ -79,7 +79,7 @@
                         
                         <div class="ln_solid"></div>
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <a href="{{ route('backend_surveys.regist') }}" class="btn btn-primary">
+                            <a href="{{ route('backend_surveys.create') }}" class="btn btn-primary">
                                 <?php echo Lang::get('title.action_regist'); ?>
                             </a>
                         </div>

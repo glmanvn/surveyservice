@@ -54,7 +54,7 @@
                                 <a href="{{ route('backend_surveys.index') }}"><?php echo Lang::get('title_master.menu_list'); ?></a>
                             </li>
                             <li>
-                                <a href="{{ route('backend_surveys.regist') }}"><?php echo Lang::get('title_master.menu_regist'); ?></a>
+                                <a href="{{ route('backend_surveys.create') }}"><?php echo Lang::get('title_master.menu_regist'); ?></a>
                             </li>
                         </ul>
                     </li>

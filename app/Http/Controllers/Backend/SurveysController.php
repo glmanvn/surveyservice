@@ -30,7 +30,25 @@ class SurveysController extends BackendController
      */
     public function create()
     {
-        //
+        $survey = new Survey();
+        return view('backend.surveys.create')->with('survey', $survey);
+    }
+    
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id = null)
+    {
+        if($id != null){
+            $survey = Survey::find($id);
+        }else{
+            $survey = new Survey();
+        }
+        
+        return view('backend.surveys.edit')->with('survey', $survey);
     }
 
     /**
@@ -59,23 +77,6 @@ class SurveysController extends BackendController
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id = null)
-    {
-        if($id != null){
-            $survey = Survey::find($id);
-        }else{
-            $survey = new Survey();
-        }
-        
-        return view('backend.surveys.edit')->with('survey', $survey);
-    }
-    
     /**
      * Update the specified resource in storage.
      *

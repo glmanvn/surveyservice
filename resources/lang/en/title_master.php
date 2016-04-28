@@ -38,11 +38,12 @@ return [
     'page_survey' => "Survey",
     'surveys_list_top' => "Survey manager",
     'surveys_edit_top' => "Provider edit",
-    'surveys_regist_top' => "Provider register",
+    'surveys_create_top' => "Provider register",
     'survey_title'  => "Survey title",
     'survey_start_date'  => "Start date",
     'survey_end_date'  => "End date",
     'survey_content'    => "Content",
+    'survey_category'   => "Category",
     
     'menu_contract' => 'Contract',
     'menu_operator' => 'Operator',

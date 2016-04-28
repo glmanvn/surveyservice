@@ -44,9 +44,9 @@ Route::get('/backend/surveys', [
     'uses' => 'Backend\SurveysController@index'
 ]);
 
-Route::get('/backend/surveys/regist', [
-    'as' => 'backend_surveys.regist',
-    'uses' => 'Backend\SurveysController@edit'
+Route::get('/backend/surveys/create', [
+    'as' => 'backend_surveys.create',
+    'uses' => 'Backend\SurveysController@create'
 ]);
 
 Route::get('/backend/surveys/edit/{id}', [
