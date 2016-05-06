@@ -129,11 +129,13 @@
                             
                             
                             <div class="form-group">
-                                <label class="control-label col-md-2 col-sm-2 col-xs-12">
-                                    <?php echo Lang::get('title_master.survey_content'); ?>
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-10 col-sm-10 col-xs-12">
+                                
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <label class="control-label">
+                                        <?php echo Lang::get('title_master.survey_content'); ?>
+                                        <span class="required">*</span>
+                                    </label>
+                                    
                                     {!! Form::text('content', $survey->content, ['id' => 'content']) !!}
                                 </div>
                             </div>
