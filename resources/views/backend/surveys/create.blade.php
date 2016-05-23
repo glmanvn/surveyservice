@@ -61,49 +61,8 @@
                                             <?php echo Lang::get('title_master.survey_category'); ?>
                                             <span class="required">*</span>
                                         </label>
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            
-                                        </div>
-                                        <label class="control-label col-md-2 col-sm-2 col-xs-12">
-                                            <?php echo Lang::get('title_master.survey_end_date'); ?>
-                                        </label>
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            {!! Form::text('end_date', @$survey->end_date, ['id' => 'end_date', 'class' => 'form-control has-feedback-left active']) !!}
-                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-2 col-sm-2 col-xs-12">
-                                            <?php echo Lang::get('title_master.survey_start_date'); ?>
-                                            <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            {!! Form::text('start_date', @$survey->start_date, ['id' => 'start_date', 'class' => 'form-control has-feedback-left active']) !!}
-                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-                                        <label class="control-label col-md-2 col-sm-2 col-xs-12">
-                                            <?php echo Lang::get('title_master.survey_end_date'); ?>
-                                        </label>
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            {!! Form::text('end_date', @$survey->end_date, ['id' => 'end_date', 'class' => 'form-control has-feedback-left active']) !!}
-                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label col-md-2 col-sm-2 col-xs-12">
-                                            <?php echo Lang::get('title_master.survey_start_date'); ?>
-                                            <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            {!! Form::text('start_date', @$survey->start_date, ['id' => 'start_date', 'class' => 'form-control has-feedback-left active']) !!}
-                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
-                                        </div>
-                                        <label class="control-label col-md-2 col-sm-2 col-xs-12">
-                                            <?php echo Lang::get('title_master.survey_end_date'); ?>
-                                        </label>
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
-                                            {!! Form::text('end_date', @$survey->end_date, ['id' => 'end_date', 'class' => 'form-control has-feedback-left active']) !!}
-                                            <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+                                        <div class="col-md-10 col-sm-10 col-xs-12">
+                                            {!! Form::select('category', array('L' => 'Large', 'S' => 'Small'), 'S', ['id' => 'category', 'class' => 'form-control']) !!}
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -146,9 +105,6 @@
                                     <a href="{{ route('backend_surveys.index') }}" class="btn btn-primary">
                                         <?php echo Lang::get('title.action_back'); ?>
                                     </a>
-                                    <button type="button" class="btn btn-danger">
-                                        <?php echo Lang::get('title.action_delete'); ?>
-                                    </button>
                                     <button type="submit" class="btn btn-success">
                                         <?php echo Lang::get('title.action_save'); ?>
                                     </button>
